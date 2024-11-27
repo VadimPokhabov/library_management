@@ -36,19 +36,13 @@ venv\Scripts\activate.bat для windows
 pip install -r requirements.txt
 ```
 
-5. Создать базу данных в PgAdmin, либо через терминал. Необходимо дать название в файле settings.py в каталоге 'base' в
-   константе (словаре) 'DATABASES'
+5. Создать базу данных в PgAdmin, либо через терминал. Необходимо дать название в файле settings.py в каталоге 
+   'library_management' в константе (словаре) 'DATABASES'
 6. Заполнить своими данными файл .env в корне вашего проекта. Образец файла лежит в корне .env.sample
 7. Для запуска проекта использовать команду
 
 ```
 python manage.py ruserver
-```
-
-8. Для запуска celery work и celery beat используйте команду
-
-```
--A base worker --beat --scheduler django --loglevel=info
 ```
 
 Запуск приложения через Docker:
@@ -63,9 +57,9 @@ docker compose up -d --build
 
 Данная команда сразу создаст образ, и сбилдит его, т.е. запустит локально в Docker
 
-4. Переходим по ссылке http://localhost:8000/
+4. Переходим по ссылке http://localhost:8000/  
 
-----
+
 Чтобы удалить контейнеры после работы с приложением используйте команду
 
 ```
