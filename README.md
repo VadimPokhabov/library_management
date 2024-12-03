@@ -5,7 +5,6 @@
 ### Стек
 
 * Django
-* psycopg2 (ORM)
 
 ___
 Для запуска проекта у себя локально необходимо:
@@ -45,26 +44,6 @@ pip install -r requirements.txt
 python manage.py ruserver
 ```
 
-Запуск приложения через Docker:
-
-1. Повторить шаги 1-3
-2. Запустить Docker локально на машине
-3. Выполнить команду в терминале
-
-```
-docker compose up -d --build
-```
-
-Данная команда сразу создаст образ, и сбилдит его, т.е. запустит локально в Docker
-
-4. Переходим по ссылке http://localhost:8000/
-
-Чтобы удалить контейнеры после работы с приложением используйте команду
-
-```
-docker-compose down
-```
-
 ----
 Данное приложение работает через консоль  
 Пользователю доступны следующие команды:
@@ -98,12 +77,6 @@ python manage.py library_command list
 
 ```commandline
 python manage.py library_command change_status
-```
-
-6. Хранение данных в txt формате. Для остановки цикла введите ```stop``` или ```break``` в консоль
-
-```commandline
-python manage.py library_command save
 ```
 
 ___
